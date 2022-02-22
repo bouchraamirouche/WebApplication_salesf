@@ -1,0 +1,50 @@
+﻿@model WebApplication_salesf.Models.Candidature__c
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+    <h4>Candidature__c</h4>
+    <hr />
+    <dl class="row">
+        
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.First_Name__c)
+        </dt>
+        <dd class = "col-sm-10">
+             @ViewBag.firstname
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Last_Name__c)
+        </dt>
+        <dd class = "col-sm-10">
+             @ViewBag.lastname
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Year__c)
+        </dt>
+        <dd class = "col-sm-10">
+             @ViewBag.year_c
+        </dd> 
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Year_Of_Experience__c)
+        </dt>
+        <dd class = "col-sm-10">
+             @ViewBag.year_of_experience
+        </dd>
+      
+    </dl>
+</div>
+<div>
+   
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
+
+   
+

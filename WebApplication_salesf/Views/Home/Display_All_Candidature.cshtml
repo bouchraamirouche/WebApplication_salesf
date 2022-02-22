@@ -1,0 +1,56 @@
+﻿@model List<WebApplication_salesf.Models.Candidature__c>
+
+@{
+    ViewData["Title"] = "Display_All_Candidature";
+}
+
+<h1>Candidature:</h1>
+
+<p>
+    <a asp-controller="CandidatController1" asp-action="CreateAsync1">Create New</a>| <a asp-controller="CandidatController1" asp-action="Edit">edit</a>
+   
+</p>
+
+
+     
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+
+            </th>
+            <th>
+                First_Name__c
+            </th>
+            <th>
+                Last_Name__c
+            </th>
+            <th>
+                Year_Of_Experience__c
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+             <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.First_Name__c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Last_Name__c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year_Of_Experience__c)
+            </td>
+        
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+﻿@model Candidature__c
+
+
+
+<h1>Edit candidature</h1>
+<hr />
+<div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+           
+            <div class="form-group">
+                <label asp-for="id" class="control-label"></label>
+                <input type="text" name="id" class="form-control" /> 
+               
+            </div>
+            <div class="form-group">
+                <label asp-for="First_Name__c" class="control-label"></label>
+                <input type="text" name="First_Name__c" class="form-control" /> 
+               
+            </div>
+            <div class="form-group">
+                <label asp-for="Last_Name__c" class="control-label"></label>
+                <input type="text" name="Last_Name__c" class="form-control"  />
+              
+            </div>
+            <div class="form-group">
+                <label asp-for="Year_Of_Experience__c" class="control-label"></label>
+                <input type="text" name="Year_Of_Experience__c" class="form-control"  />
+               
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
